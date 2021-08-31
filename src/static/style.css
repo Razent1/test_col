@@ -1,0 +1,23 @@
+.data_title {
+    text-align: center;
+}
+
+.data_title_error {
+    text-align: center;
+    color: red;
+}
+
+form {
+    text-align: center;
+}
+
+input, textarea, select, button {
+    width: 300px;
+    padding: 0;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+.result {
+    text-align: center;
+}

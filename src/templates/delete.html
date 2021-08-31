@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Delete</title>
+      <link rel="stylesheet"
+          href="{{ url_for('static', path='/style.css')}}">
+</head>
+<body>
+<form action="/delete_data" method="post">
+    Enter order id <br>
+    <input type="number" name="order_id"> <br>
+     <button type="submit" onclick="window.location='/delete'">Enter</button>
+</form>
+<div class="result">
+    <h3>Information in Database</h3>
+    <select name="Show info" id="db">
+        {% for item in res %}
+            <option>{{item}}</option>
+        {% endfor %}
+    </select> <br>
+      <button style="margin-top: 20px" type="button" onclick="window.location='/'">Back to Main page</button>
+</div>
+</body>
+</html>
