@@ -15,14 +15,10 @@
     <input type="date" name="date_sale" value={{date}}> <br>
     Enter id of manager <br>
     <input type="number" name="manager_id"> <br>
-    <button type="submit" onclick="window.location='/'">Enter</button>
+    <button type="submit" onclick="window.location='/'">Insert</button>
     <br>
 </form>
 <div class="result">
-    <h3>Sending data</h3>
-    <p>Total Due: {{total_due}}</p>
-    <p>Date: {{date_sale}}</p>
-    <p>Manager id: {{manager_id}}</p>
     <h3>Information in Database</h3>
     <select name="Show info" id="db">
         {% for item in res %}
